@@ -57,7 +57,7 @@
 			else{
 			//This is the landing page to log in the user-->
 			print '<div id="login-form" class="col-md-6 col-md-offset-1">
-				<div class="row">
+				<div class="row" id="login-wrap">
 					<form class="inline-form" id="login-form">
 						<input type="text" class="col-md-2 col-sm-2" id="user" placeholder="Username">
 						<input type="password" class="col-md-2 col-sm-2" id="password" placeholder="Password">
@@ -66,8 +66,8 @@
 					</form>
 				</div>
 				<div class="row">
-					<label class="col-md-3"><input type="checkbox"> Remember Me</label>
-					<label class="col-md-3"><a href="#">Forgot Password</a></label>
+					<label class="col-md-3"><input type="checkbox" id="land-checkbox"> Remember Me</label>
+					<label class="col-md-3"><a href="#" id="forgot-link">Forgot Password</a></label>
 				</div>
 				
 				</div>

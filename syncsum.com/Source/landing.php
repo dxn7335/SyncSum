@@ -4,11 +4,11 @@
 	require_once 'header.php'; 
 ?>
 
-<div class="container-fluid" style="padding-left: 0px;padding-right: 0px;">
+<div class="container-fluid" style="padding:0;">
 	<div id="land">
 		<!--Main page header-->
 		<div class="row center-block landing-space" >
-			<div class="col-md-12" style="margin-top:2%;">
+			<div class="col-md-12">
 				<h1 class="text-center">Job Matching. With Personality</h1>
 			</div>
 		</div>
@@ -16,15 +16,15 @@
 		<!--Middle glyph description-->
 		<div class="row text-center">
 			<div class="col-md-4">
-				<img src="../Images/icon1.png" style="height: 61px; width: 61px"/>
+				<img src="../Images/icon1.png" />
 				<p>Connecting applicants and employers</p>
 			</div>
 			<div class="col-md-4">
-				<img src="../Images/icon2.png" style="height: 61px; width: 61px"/>
-				<p>Test your skills. Measure career progress.</p>
+				<img src="../Images/icon2.png" />
+				<p>Test your skills.<br>Measure career progress.</p>
 			</div>
 			<div class="col-md-4">
-				<img src="../Images/icon3.png" style="height: 61px; width: 61px"/>
+				<img src="../Images/icon3.png" />
 				<p>Easy. Smart. Logical.</p>
 			</div>
 		</div>
