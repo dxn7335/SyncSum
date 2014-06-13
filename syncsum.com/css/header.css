@@ -11,18 +11,31 @@ html, body
 
 #header{
 	width: 100%;
-	background-color: rgb(83, 120, 158);
-	height: 115px;
+	background-color: rgba(70, 106, 143, 1);
+	height: 100px;
+	/* display: inline-block; */
+	/* margin-bottom: 0; */
+	/* height: 100%; */
+	font-size: 90%;
+	padding-bottom: 0.5%;
+	/* position: relative; */
 }
 
 #title{
-	margin-top: 2%;
+	margin-top: 1.5%;
 	display: inline-block;
+	float: left;
 }
 
 .list-inline li a{
 	color: white;
 	font-weight: bold;
+}
+
+#login-form{
+	display: inline-block;
+	float: left;
+	margin-left: 0;
 }
 
 #login-form input[type="text"]{
@@ -50,9 +63,14 @@ html, body
 	width: 20%;
 }
 
+#login-wrap{
+	padding-left: 2%;
+}
+
 #login-form label{
-	font-size: .75em;
+	font-size: 100%;
 	color: white;
+	font-weight: 300;
 }
 
 #title h1{
@@ -78,17 +96,17 @@ html, body
 	#header{
 		width: 100%;
 		background-color: rgb(83, 121, 159);
-		height: 215px;
+		/*height: 215px;*/
 	}
 	
 	#login-form input[type="text"]{
 		display: block;
-		width: 75%;
+		width: 100%;
 	}
 	
 	#login-form input[type="password"]{
 		display: block;
-		width: 75%;
+		width: 100%;
 	}
 	
 	#login-form button{

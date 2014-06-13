@@ -1,11 +1,15 @@
 #footer{
-	color: white;
-	height: 100px;
+	color: rgb(218, 218, 218);
+	padding-top: 1.5%;
+	padding-bottom: 1%;
 	font-family: Helvetica, Arial;
 	width: 100%;
 	background-color: rgb(37,37,37);
-	font-size: .5em;
+	font-size: 90%;
+}
 
+#footer h4{
+	font-size:100%;
 }
 
 #footer h2{

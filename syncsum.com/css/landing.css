@@ -1,28 +1,39 @@
 #land{
-	
-	height: 75%;
 	width: 100%;
-	height: 1000px;
-	background: url(../Images/background-overlay.gif) no-repeat center center fixed; 
+	height: 100%;
+	background: url(../Images/background-overlay.gif) no-repeat center center; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
 	z-index: -5;
+	display: inline-block;
+	padding-bottom: 5%;
+	padding-top: 3%;
 }
 
 .landing-space{
 	height: 25%;
-	
+	margin-top: 5%;
+	margin-bottom: 10%;
+}
+#land-checkbox{
+	float: left;
+	margin-right: 3%;
+}
+
+#forgot-link{
+	color:#96CEFF;
 }
 
 #land h1{
 	color: white;
-	font-size: 3em;
+	font-size: 290%;
+	margin-bottom:2%;
 }
 
 #land img{
-	height: 125px;
+	height: 69px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -37,14 +48,30 @@
 	font-size: 1.25em;
 }
 
+#land > .text-center {
+	width: 80%;
+	max-width: 1200px;
+	margin: auto;
+	margin-top: 5%;
+}
+
+#land > .text-center > .col-md-4 > p{
+	width: 90%;
+	margin: auto;
+	margin-top:2%;
+}
+
 #wrapper-bottom-landing{
 	text-align: center;
-	padding-top: 5%; 
+	padding-top: 5%;
+	padding-bottom: 10%; 
 }
 
 .landing-space button[type="submit"]{
-	width: 200px;
-	height: 100%;
+	width: 20%;
+	min-width: 200px;
+	clear: both;
+	height: 70%;
 	font-size: 2em;
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
