@@ -84,3 +84,39 @@
 	margin: 0;
 }
 
+@media only screen and (max-width: 480px){
+
+	#land h1{
+		margin-bottom: 10%;
+		margin-top: 10%;
+	}
+
+	#land p{
+		width: 80%;
+		margin: auto;
+		margin-top: 10%;
+	}
+
+	#land .col-md-4 {
+		margin-bottom: 10%;
+	}
+
+	.landing-space{
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.landing-space button[type="submit"]{
+		margin-bottom: 30%;
+		margin-top:0;
+	}
+
+	#land img{
+		height:100%;
+	}
+
+	#wrapper-bottom-landing{
+		padding-top:0;
+	}
+
+}
+
