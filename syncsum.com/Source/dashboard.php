@@ -6,22 +6,17 @@ require_once 'header.php';
 ?>
 
 <div class="container-fluid">
-	<div class="row">
-		<div class="col-md-3 col-md-offset-1" id="left-content">
+	<div id='dashboard-wrap' class="row">
+		<div class="col-md-2 col-md-offset-2" id="left-content">
+			<div class="img-thumbnail">
+				<img src=<?php print IMAGES . "kevin.jpg"; ?> alt="Profile picture"/>
+			</div>	
 			<div id="main-header">
 				<!--Need a function to pull name and insert here-->
 				<h3>Greetings. Kevin Lewis</h3>
 			</div>
-			<div class="img-thumbnail">
-				<img src=<?php print IMAGES . "kevin.jpg"; ?> alt="Profile picture"/>
-			</div>	
-			<div class="profile-links">
-				<span><img src=<?php print IMAGES . "example-icon.gif"; ?> alt="Icon"/> <h4>Edit Profile</h4></span>
-				<span><img src=<?php print IMAGES . "inbox-icon.gif"; ?> alt="Icon"/> <h4>Inbox</h4></span>
-				<span><img src=<?php print IMAGES . "files-icon.gif"; ?> alt="Icon"/> <h4>Files</h4></span>
-			</div>
 			<div class="profile-options">
-				<div><h3><a id="profile-activate">Profile</a></h3></div>
+				<div><a id="profile-activate">Profile</a></div>
 				<div id="profile-dropdown">
 					<div id="profile-status">
 						<h3 style="color:rgb(114, 114, 114);">Profile Status:</h3>
@@ -33,19 +28,25 @@ require_once 'header.php';
 						<div><h3>Last Login</h3></div>
 					</div>
 				</div>
-				<div><h3><a id="presence-activate">Presence</a></h3></div>
+				<div><a id="presence-activate">Presence</a></div>
 				<div id="presence-dropdown">
 					
 				</div>
-				<div><h3><a id="content-activate">Content</a></h3></div>
+				<div><a id="content-activate">Content</a></div>
 				<div id="content-dropdown">
 					
 				</div>
 			</div>
 		</div>
+
 		<!--This should be changed to a dynamic portion on updates for the user (ajax)-->
-		<div class="col-md-4 col-md-offset-2">
-			<div id="welcome">
+		<div id='dashboard-content-right' class="col-md-7 col-md-offset-0">
+			<div class="profile-links">
+				<span><img src=<?php print IMAGES . "example-icon.gif"; ?> alt="Icon"/> <h4>Edit Profile</h4></span>
+				<span><img src=<?php print IMAGES . "inbox-icon.gif"; ?> alt="Icon"/> <h4>Inbox</h4></span>
+				<span><img src=<?php print IMAGES . "files-icon.gif"; ?> alt="Icon"/> <h4>Files</h4></span>
+			</div>
+			<div id="welcome" class='dashboard-item'>
 				<div>
 					<h2>Welcome!</h2>
 					<p>If you haven't done so already, please go to your profile page to enter your
@@ -56,13 +57,22 @@ require_once 'header.php';
 				</div>
 			</div>
 			<!--Connect this to the server for "mail" functionality-->
-			<div id="message-board">
-				<div id="bot-header">
-					<h2>Message Header</h2>
+			<div id="message-board" class='dashboard-item dashboard-msg'>
+				<div  class='dashboard-item-header'>
+					<img class="dashboard-prof-img" src=<?php print IMAGES . "profile.gif"; ?> />
+					<span class='dashboard-prof-name'>Name</span>
+					<span class='dashboard-msg-date'>Date</span>
 				</div>
-				<div id="bottom-content">
+				<div id="bottom-content" class='dashboard-item-content'>
+					<h4 class='dashboard-content-header'>Message Header</h4>
 					<p>Any kind of content or notification messages they may have being 
 					updated on the dashboard.</p>
+				</div>
+				<div class='dashboard-item-footer'>
+					<!--Action links here-->
+					<span class='dashboard-action-link'>Action</span>
+					<span class='dashboard-action-link'>Action</span>
+					<span class='dashboard-action-link'>Action</span>
 				</div>
 			</div>
 		</div>

@@ -35,7 +35,7 @@
 				</div>
 				<?php if($current != 'landing'){
 				//top nav bar after the user has logged in. You have to connect this to the authentication process this is only the view.-->
-				print '<div id="navigation" class="nav col-md-5 col-md-offset-2">
+				print '<div id="navigation" class="nav col-md-6 col-md-offset-1">
 					<div class="navbar-header">
 						<ul class="list-inline">';
 							//Make sure to set the server variable 'current' for every page so we know what our active page is
@@ -51,7 +51,7 @@
 					</div>
 					<img class="col-md-1 col-sm-1" src=' . IMAGES . 'inbox-white.gif />
 					<img class="col-md-1 col-sm-1" src=' . IMAGES . 'profile.gif />
-					<button class="col-md-2 col-sm-2 btn btn-primary btn-sm" type="submit">Logout</button>
+					<button id="logout" class="col-md-2 col-sm-2 btn btn-primary btn-sm" type="submit">Logout</button>
 				</div>';
 			}
 			else{
